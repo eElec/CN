@@ -1,0 +1,12 @@
+1. Write a c program using command line argument to add two numbers.
+
+2. Write a c program using command line argument to calculate average of 5 numbers.
+
+3. Write a C program to assign values to each members of the following structure using command line arguments. Pass the populated structure to a function Using call-by address and print the value of each member of the structure with in that function. 
+struct info {
+ int roll_no; 
+ char name[50];
+ float CGPA; 
+};
+
+4. Write a C program to display the IP address and port number using command line argument.

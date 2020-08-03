@@ -19,7 +19,7 @@ void main(){
 
 	printf("%x %x %x %x\n", C.ch1, C.ch2[0], C.ch2[1], C.ch3);
 
-	int r = 0;
+	unsigned int r = 0;
 	r = r << 8 | C.ch3;
 	r = r << 8 | C.ch2[1];
 	r = r << 8 | C.ch2[0];

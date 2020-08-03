@@ -22,6 +22,6 @@ void main(){
 	printf("\n\nNumber: %d \nHexadecimal: 0x%x", x, x);
 	printf("\nBytes of the number: %x %x %x %x", bytes[3], bytes[2]>>8*1, bytes[1]>>8*2, bytes[0]>>8*3);
 
-	printf("\nNumber in Little Endian: %x", x);
-	printf("\nNumber in Big Endian: %x", r);
+	printf("\nNumber in Little Endian: 0x%x or %u", x, x);
+	printf("\nNumber in Big Endian: 0x%x or %u", r, r);
 }
