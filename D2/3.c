@@ -9,9 +9,9 @@ struct info {
 };
 
 void display(struct info *var){
-	printf("Roll Number: %d", var->roll_no);
-	printf("\nName: %s", var->name);
-	printf("\nCGPA: %.2f", var->CGPA);
+	printf("Roll Number: %d\n", var->roll_no);
+	printf("Name: %s\n", var->name);
+	printf("CGPA: %.2f\n", var->CGPA);
 }
 
 void main(int argc, char *argv[]){
