@@ -1,0 +1,2 @@
+1. GCD of two numbers
+2. LCM of two numbers
