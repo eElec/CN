@@ -36,6 +36,7 @@ void main(){
 	if(setsockopt(sockfd, SOL_SOCKET, SO_REUSEPORT, &so_reuseaddr, sizeof(so_reuseaddr)) < 0
 	|| setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &so_reuseaddr, sizeof(so_reuseaddr)) < 0){	
 		printf("Failed to set options.\n");
+		return;
 	}
 	printf("Server Socket created successfully\n");
 

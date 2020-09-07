@@ -18,6 +18,13 @@ void main(){
 	}
 	printf("Server Socket created successfully\n");
 
+	int so_reuseaddr = 1;
+	if(setsockopt(sockfd, SOL_SOCKET, SO_REUSEPORT, &so_reuseaddr, sizeof(so_reuseaddr)) < 0
+	|| setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &so_reuseaddr, sizeof(so_reuseaddr)) < 0){	
+		printf("Failed to set options.\n");
+		return;
+	}
+	
 	struct sockaddr_in addr;
 	addr.sin_family = AF_INET;
 	addr.sin_port = htons(8000);
