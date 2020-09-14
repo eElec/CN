@@ -1,0 +1,1 @@
+1. Write a client server TCP program that client 1 send two integer number to the server and server sends it to client 2, client 2 multiplies these two numbers and send the result to server, which in turn sends the number to client 1
