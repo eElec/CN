@@ -39,6 +39,6 @@ void main(int argc, char* argv[]){
 
 	// Recieve Msg
 	recv(sockfd, (char *)buffer, sizeof(buffer), 0);
-	printf("Sum: %s\n", buffer);
+	printf("Product: %s\n", buffer);
 	close(sockfd);
 }

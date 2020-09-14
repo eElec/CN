@@ -55,8 +55,8 @@ void main(int argc, char* argv[]){
 	int total = 0;
 	getNumbers(buffer, arr, &total);
 	
-	int sum = arr[0] + arr[1];
-	sprintf(buffer, "%d", sum);
+	int mult = arr[0] * arr[1];
+	sprintf(buffer, "%d", mult);
 	send(sockfd, (char*) buffer, sizeof(buffer), 0);
 	close(sockfd);
 }
